@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Shoot Agreement Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .accordion {
+            margin-top: 20px;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-header {
+            background-color: #f8f9fa;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .accordion-header:hover {
+            background-color: #e9ecef;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+        }
+        .accordion-content.active {
+            display: block;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        li::before {
+            content: '✓';
+            color: #2ecc71;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Agreements / Our Commitments</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">1. Pre-Shoot Preparation (3 Days Before)</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Confirm shoot date, time, and location.</li>
+                        <li>Share shot list and script outline.</li>
+                        <li>Discuss desired B-roll shots for storytelling.</li>
+                        <li>Review equipment checklist (cameras, mics, lights, etc.).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">2. Day of the Shoot</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Arrive on time and set up equipment.</li>
+                        <li>Rehearse intro/outro sequences.</li>
+                        <li>Capture talking head videos as planned.</li>
+                        <li>Film B-roll with movement in mind.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">3. Post-Shoot</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Review footage together and discuss what worked well.</li>
+                        <li>Provide feedback on framing, composition, and storytelling.</li>
+                        <li>Assign a rating for overall performance and note areas for improvement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">4. Continuous Improvement</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Discuss new ideas for incorporating more dynamic shots.</li>
+                        <li>Explore different locations or techniques for future shoots.</li>
+                        <li>Regularly update this checklist to refine our process.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
